@@ -1,0 +1,22 @@
+<include file="Public/header" title="更新比赛场次" />
+<div id="page-wrapper">
+    <form method="post" action="{:U('Session/update')}">
+        <div class="form-group">
+            <label for="aa">比赛场次序号</label>
+            <input type="text" name="matchnum" class="form-control" id="aa" value="{$model.matchnum}" placeholder="输入比赛场次序号">
+        </div>
+        <div class="form-group">
+            <label for="bb">赛区</label>
+            <input type="text" name="matchzone" class="form-control" id="bb" value="{$model.matchzone}" placeholder="赛区">
+        </div>
+        <div class="form-group">
+            <label for="cc">比赛时间</label>
+            <input type="text" name="matchtime" class="form-control" id="cc" value="{$model.matchtime}" placeholder="比赛时间" value="100">
+        </div>
+        <div class="form-group">
+            <input type="hidden" name="id" value="{$model.id}">
+            <button type="submit" class="btn btn-default">更新</button>
+        </div>
+    </form>
+</div>
+<include file="Public/footer" />
